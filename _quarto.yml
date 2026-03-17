@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "EMU660 Assignment 1 - Emrecan Serin"
