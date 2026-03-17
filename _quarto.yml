@@ -1,9 +1,10 @@
 project:
   type: website
   output-dir: docs
-
+  
 website:
-  title: "EMU660 Assignment 1 - Emrecan Serin"
+  title: "EMU660 Assignment 1 - Emre Can Serin"
+  site-url: https://emreserincan-design.github.io/emu660-assignment1-emrecanserin/
   navbar:
     left:
       - href: index.qmd
