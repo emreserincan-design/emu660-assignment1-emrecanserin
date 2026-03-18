@@ -114,14 +114,8 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#kod-yazmayı-zamanında-öğrenmediğim-için-kodu-chatgpt-ile-sohbet-ederek-yazdık" id="toc-kod-yazmayı-zamanında-öğrenmediğim-için-kodu-chatgpt-ile-sohbet-ederek-yazdık" class="nav-link active" data-scroll-target="#kod-yazmayı-zamanında-öğrenmediğim-için-kodu-chatgpt-ile-sohbet-ederek-yazdık">Kod yazmayı zamanında öğrenmediğim için kodu chatgpt ile sohbet ederek yazdık :(</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -151,32 +145,72 @@ ul.task-list li input[type="checkbox"] {
 <p>“Domain bilgisi, problemi doğru anlamayı ve elde edilen sonuçları doğru yorumlamayı sağlar. Alan bilgisi olmadan yapılan analizler teknik olarak doğru olsa bile yanlış sonuçlara yol açabilir.”</p>
 <p>Aşağıdakilerden hangisi videoya göre veri biliminde en önemli beceridir?</p>
 <ol type="A">
-<li>Karmaşık kod yazabilmek<br>
-</li>
-<li>Algoritmaları ezberlemek<br>
-</li>
+<li>Karmaşık kod yazabilmek</li>
+<li>Algoritmaları ezberlemek</li>
 <li>Problemi doğru anlamak ve doğru soruları sormak (doğru)</li>
-<li>En yeni araçları kullanmak</li>
+<li>En yeni araçları kullanmak<br>
+<br>
+</li>
 </ol>
-<p>```{r} compute_stats &lt;- function(x) { list( mean = mean(x), median = median(x), variance = var(x), IQR = IQR(x), min = min(x), max = max(x) ) }</p>
-<p><code>{r} for (col_name in names(mtcars)) {   cat("Column:", col_name, "\n")   stats &lt;- compute_stats(mtcars[[col_name]])   print(stats)   cat("\n-------------------\n") }</code>{r} apply_results &lt;- sapply(mtcars, compute_stats)</p>
-<p>apply_results</p>
-<section id="kod-yazmayı-zamanında-öğrenmediğim-için-kodu-chatgpt-ile-sohbet-ederek-yazdık" class="level2">
-<h2 class="anchored" data-anchor-id="kod-yazmayı-zamanında-öğrenmediğim-için-kodu-chatgpt-ile-sohbet-ederek-yazdık">Kod yazmayı zamanında öğrenmediğim için kodu chatgpt ile sohbet ederek yazdık :(</h2>
-<p>```{r} library(dslabs)</p>
-<p>data(“polls_us_election_2016”)</p>
-<p>my_first &lt;- “Emre” my_birth_year &lt;- 2001</p>
-<p>k &lt;- (nchar(my_first) + my_birth_year) %% 15 + 8 k</p>
-<p>if (k %% 2 == 0) { head(polls_us_election_2016, k) } else { tail(polls_us_election_2016, k) }</p>
-<p>total_na &lt;- sum(is.na(polls_us_election_2016)) total_na</p>
-<p>na_per_column &lt;- sort(colSums(is.na(polls_us_election_2016)), decreasing = TRUE) head(na_per_column, 8)</p>
-<p>new_data &lt;- polls_us_election_2016</p>
-<p>for (col in names(new_data)) { if (is.numeric(new_data[[col]])) { new_data[[col]][is.na(new_data[[col]])] &lt;- my_birth_year + k } else { new_data[[col]][is.na(new_data[[col]])] &lt;- paste0(my_first, “_”, k) } }</p>
-<p>if (k %% 2 == 0) { head(new_data, k) } else { tail(new_data, k) }</p>
-<p>sum(is.na(new_data)) anyNA(new_data)</p>
+<p>```{r}<br>
+for (col_name in names(mtcars)) {<br>
+cat(“Column:”, col_name, “\n”)<br>
+stats &lt;- compute_stats(mtcars[[col_name]])<br>
+print(stats)<br>
+cat(“\n——————-\n”)<br>
+}<br>
+<br>
+```{r}<br>
+for (col_name in names(mtcars)) {<br>
+cat(“Column:”, col_name, “\n”)<br>
+stats &lt;- compute_stats(mtcars[[col_name]])<br>
+print(stats)<br>
+cat(“\n——————-\n”)<br>
+}<br>
+<br>
+<br>
+```{r}<br>
+library(dslabs)<br>
+<br>
+data(“polls_us_election_2016”)<br>
+<br>
+my_first &lt;- “Emre”<br>
+my_birth_year &lt;- 2001<br>
+<br>
+k &lt;- (nchar(my_first) + my_birth_year) %% 15 + 8<br>
+<br>
+if (k %% 2 == 0) {<br>
+head(polls_us_election_2016, k)<br>
+} else {<br>
+tail(polls_us_election_2016, k)<br>
+}<br>
+<br>
+total_na &lt;- sum(is.na(polls_us_election_2016))<br>
+total_na<br>
+<br>
+na_per_column &lt;- sort(colSums(is.na(polls_us_election_2016)), decreasing = TRUE)<br>
+head(na_per_column, 8)<br>
+<br>
+new_data &lt;- polls_us_election_2016<br>
+<br>
+for (col in names(new_data)) {<br>
+if (is.numeric(new_data[[col]])) {<br>
+new_data[[col]][is.na(new_data[[col]])] &lt;- my_birth_year + k<br>
+} else {<br>
+new_data[[col]][is.na(new_data[[col]])] &lt;- paste0(my_first, “_”, k)<br>
+}<br>
+}<br>
+<br>
+if (k %% 2 == 0) {<br>
+head(new_data, k)<br>
+} else {<br>
+tail(new_data, k)<br>
+}<br>
+<br>
+sum(is.na(new_data))<br>
+anyNA(new_data)</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
