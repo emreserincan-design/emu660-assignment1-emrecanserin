@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "emu660-assignment1-emrecanserin",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2\n\n\ntesttt"
+    "text": "Hoşgeldinizz\nSelam, ben Emrecan, ilk ödevi geç yüklediğim için template üzerinden gitmek yerine kendi websitemi oluşturmak zorunda kaldım."
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,12 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "assignments/assignment-1.html",
+    "href": "assignments/assignment-1.html",
+    "title": "assignment-1",
+    "section": "",
+    "text": "Bu videoda veri bilimi ile endüstri mühendisliğinin nasıl kesiştiği konuşulmuş. İzlerken şunu fark ettim: veri bilimi sandığımız gibi tek bir meslek değil. İçinde farklı roller var ve herkes farklı şeyler yapıyor ama hepsi sonuçta veriyi kullanarak karar vermeye çalışıyor. Endüstri mühendisliği tarafı da burada devreye giriyor. Çünkü zaten bu bölümde okuyan biri karar verme, optimizasyon ve sistem düşünme gibi konulara alışık. Yani veri bilimine geçiş aslında sıfırdan başlamak gibi değil, daha çok bildiğin şeyleri farklı bir alana uygulamak gibi. Videoda en çok underline edilen şeylerden biri de okul ile gerçek hayat arasındaki fark. Okulda genelde temiz veriyle uğraşıyoruz ama gerçek hayatta veri o kadar düzenli değil. Hatta çoğu zaman veri eksik, hatalı ya da karışık oluyor. Bu yüzden işin büyük kısmı analizden önce veriyi düzeltmekle geçiyor. Bir diğer önemli nokta da şu: sadece Python ya da R bilmek yeterli değil. Yani teknik bilgi önemli ama tek başına yeterli değil. Asıl fark yaratan şey problemi doğru anlamak ve doğru soruları sorabilmek. Çünkü yanlış soruyla doğru sonuç bile işe yaramayabilir. Zaten son dersimizde de şunu yaptık: Böyle şeyler yapılabildiğini bilin fakat teknik detaya girmeyelim. Onun yerine bu grafikten ne anlaşılır, veri nasıl yorumlanır, edge caselerin sebepleri neler olabilir gibi sorgulamalar üzerinde ilerlendi. Genel olarak video şunu hissettiriyor: veri bilimi biraz keşfetme işi. Tek bir doğru yol yok ve herkes kendi yolunu zamanla buluyor. Sürekli öğrenmek gerekiyor …"
   }
 ]

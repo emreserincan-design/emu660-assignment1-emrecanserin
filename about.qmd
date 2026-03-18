@@ -2,8 +2,4 @@
 title: "About"
 ---
 
-About this site
-
-```{r}
-1 + 1
-```
+Bilkent Endüstri 2025 mezunuyum, drummer for 10 years, love blues&rocknroll

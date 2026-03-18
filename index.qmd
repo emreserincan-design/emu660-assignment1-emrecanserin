@@ -2,12 +2,6 @@
 title: "emu660-assignment1-emrecanserin"
 ---
 
-This is a Quarto website.
+# Hoşgeldinizz
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
-
-testtt
+Selam, ben Emrecan, ilk ödevi geç yüklediğim için template üzerinden gitmek yerine kendi websitemi oluşturmak zorunda kaldım.\
