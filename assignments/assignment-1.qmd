@@ -18,24 +18,38 @@ B)  Algoritmaları ezberlemek
 C)  Problemi doğru anlamak ve doğru soruları sormak (doğru)
 D)  En yeni araçları kullanmak
 
+\
 \`\`\`{r}\
+compute_stats \<- function(x) {\
+list(\
+mean = mean(x),\
+median = median(x),\
+variance = var(x),\
+IQR = IQR(x),\
+min = min(x),\
+max = max(x)\
+)\
+}\
+\
 for (col_name in names(mtcars)) {\
 cat("Column:", col_name, "\\n")\
 stats \<- compute_stats(mtcars\[\[col_name\]\])\
 print(stats)\
 cat("\\n-------------------\\n")\
 }\
-\`\`\`\
 \
-\`\`\`{r}\
+apply_results \<- sapply(mtcars, compute_stats)\
+apply_results\
+\
 library(dslabs)\
 \
 data("polls_us_election_2016")\
 \
-my_first \<- "Emre"\
+my_first \<- "Emrecan"\
 my_birth_year \<- 2001\
 \
 k \<- (nchar(my_first) + my_birth_year) %% 15 + 8\
+k\
 \
 if (k %% 2 == 0) {\
 head(polls_us_election_2016, k)\
@@ -66,6 +80,4 @@ tail(new_data, k)\
 }\
 \
 sum(is.na(new_data))\
-anyNA(new_data)\
-\
-\`\`\`
+anyNA(new_data)

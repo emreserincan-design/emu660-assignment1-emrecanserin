@@ -150,24 +150,38 @@ ul.task-list li input[type="checkbox"] {
 <li>Problemi doğru anlamak ve doğru soruları sormak (doğru)</li>
 <li>En yeni araçları kullanmak</li>
 </ol>
-<p>```{r}<br>
+<p><br>
+```{r}<br>
+compute_stats &lt;- function(x) {<br>
+list(<br>
+mean = mean(x),<br>
+median = median(x),<br>
+variance = var(x),<br>
+IQR = IQR(x),<br>
+min = min(x),<br>
+max = max(x)<br>
+)<br>
+}<br>
+<br>
 for (col_name in names(mtcars)) {<br>
 cat(“Column:”, col_name, “\n”)<br>
 stats &lt;- compute_stats(mtcars[[col_name]])<br>
 print(stats)<br>
 cat(“\n——————-\n”)<br>
 }<br>
-```<br>
 <br>
-```{r}<br>
+apply_results &lt;- sapply(mtcars, compute_stats)<br>
+apply_results<br>
+<br>
 library(dslabs)<br>
 <br>
 data(“polls_us_election_2016”)<br>
 <br>
-my_first &lt;- “Emre”<br>
+my_first &lt;- “Emrecan”<br>
 my_birth_year &lt;- 2001<br>
 <br>
 k &lt;- (nchar(my_first) + my_birth_year) %% 15 + 8<br>
+k<br>
 <br>
 if (k %% 2 == 0) {<br>
 head(polls_us_election_2016, k)<br>
@@ -198,9 +212,7 @@ tail(new_data, k)<br>
 }<br>
 <br>
 sum(is.na(new_data))<br>
-anyNA(new_data)<br>
-<br>
-```</p>
+anyNA(new_data)</p>
 
 
 
