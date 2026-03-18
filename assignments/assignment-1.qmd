@@ -42,7 +42,6 @@ apply_results \<- sapply(mtcars, compute_stats)\
 apply_results\
 \
 library(dslabs)\
-\
 data("polls_us_election_2016")\
 \
 my_first \<- "Emrecan"\
@@ -80,4 +79,5 @@ tail(new_data, k)\
 }\
 \
 sum(is.na(new_data))\
-anyNA(new_data)
+anyNA(new_data)\
+\`\`\`
