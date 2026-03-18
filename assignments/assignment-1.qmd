@@ -16,8 +16,7 @@ Aşağıdakilerden hangisi videoya göre veri biliminde en önemli beceridir?
 A)  Karmaşık kod yazabilmek
 B)  Algoritmaları ezberlemek
 C)  Problemi doğru anlamak ve doğru soruları sormak (doğru)
-D)  En yeni araçları kullanmak\
-    \
+D)  En yeni araçları kullanmak
 
 \`\`\`{r}\
 for (col_name in names(mtcars)) {\
@@ -26,15 +25,7 @@ stats \<- compute_stats(mtcars\[\[col_name\]\])\
 print(stats)\
 cat("\\n-------------------\\n")\
 }\
-\
-\`\`\`{r}\
-for (col_name in names(mtcars)) {\
-cat("Column:", col_name, "\\n")\
-stats \<- compute_stats(mtcars\[\[col_name\]\])\
-print(stats)\
-cat("\\n-------------------\\n")\
-}\
-\
+\`\`\`\
 \
 \`\`\`{r}\
 library(dslabs)\
@@ -75,4 +66,6 @@ tail(new_data, k)\
 }\
 \
 sum(is.na(new_data))\
-anyNA(new_data)
+anyNA(new_data)\
+\
+\`\`\`
