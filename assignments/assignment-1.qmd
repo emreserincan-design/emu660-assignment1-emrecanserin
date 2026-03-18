@@ -66,9 +66,10 @@ new_data <- polls_us_election_2016
 for (col in names(new_data)) {
   if (is.numeric(new_data[[col]])) {
     new_data[[col]][is.na(new_data[[col]])] <- my_birth_year + k
-  } else {
-    new_data[[col]][is.na(new_data[[col]])] <- paste0(my_first, "_", k)
-  }
+} else {
+  new_data[[col]] <- as.character(new_data[[col]])
+  new_data[[col]][is.na(new_data[[col]])] <- paste0(my_first, "_", k)
+}
 }
 
 if (k %% 2 == 0) {
@@ -80,3 +81,5 @@ if (k %% 2 == 0) {
 sum(is.na(new_data))
 anyNA(new_data)
 ```
+
+
