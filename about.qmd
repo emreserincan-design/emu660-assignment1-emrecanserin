@@ -2,6 +2,11 @@
 title: "About"
 ---
 
+## Yunan Vizesi Fotoğrafım
+
+![](files/profile.jpg){width="200px"}
+
+\
 Bilkent Endüstri 2025 mezunuyum, drummer for 10 years, love blues&rocknroll\
 
 ## Emrecan' s CV
