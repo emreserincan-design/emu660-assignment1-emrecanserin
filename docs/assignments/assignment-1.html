@@ -152,6 +152,9 @@ ul.task-list li input[type="checkbox"] {
 <li>Problemi doğru anlamak ve doğru soruları sormak (doğru)</li>
 <li>En yeni araçları kullanmak</li>
 </ol>
+<p>compute_stats &lt;- function(x) { list( mean = mean(x), median = median(x), variance = var(x), IQR = IQR(x), min = min(x), max = max(x) ) }</p>
+<p>for (col_name in names(mtcars)) { cat(“Column:”, col_name, “”) stats &lt;- compute_stats(mtcars[[col_name]]) print(stats) cat(“——————-”) } apply_results &lt;- sapply(mtcars, compute_stats)</p>
+<p>apply_results</p>
 
 
 

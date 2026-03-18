@@ -22,3 +22,27 @@ C) Problemi doğru anlamak ve doğru soruları sormak (doğru)
 D) En yeni araçları kullanmak  
 
 
+
+```{r}
+compute_stats <- function(x) {
+  list(
+    mean = mean(x),
+    median = median(x),
+    variance = var(x),
+    IQR = IQR(x),
+    min = min(x),
+    max = max(x)
+  )
+}
+
+```{r}
+for (col_name in names(mtcars)) {
+  cat("Column:", col_name, "\n")
+  stats <- compute_stats(mtcars[[col_name]])
+  print(stats)
+  cat("\n-------------------\n")
+}
+```{r}
+apply_results <- sapply(mtcars, compute_stats)
+
+apply_results
