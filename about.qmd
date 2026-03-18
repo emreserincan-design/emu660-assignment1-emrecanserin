@@ -2,4 +2,10 @@
 title: "About"
 ---
 
-Bilkent Endüstri 2025 mezunuyum, drummer for 10 years, love blues&rocknroll
+Bilkent Endüstri 2025 mezunuyum, drummer for 10 years, love blues&rocknroll\
+
+## Emrecan' s CV
+
+Aşağıdan indirilebilir :)
+
+[Download my CV](files/emre_cv.pdf)
